@@ -110,3 +110,10 @@ Be specific and cite `file:line`. When a value is needed (a curve, a duration, a
 
 - Prefer CSS transitions/`@starting-style`/WAAPI for predetermined motion; JS/springs for dynamic, interruptible, gesture-driven motion.
 - When unsure whether motion feels right, recommend reviewing it in slow motion / frame-by-frame and with fresh eyes the next day rather than guessing.
+## 中文执行导读
+
+这是 `review-animations` 的中文 runtime 入口。
+
+中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
+
+# Reviewing Animations

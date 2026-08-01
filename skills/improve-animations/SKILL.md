@@ -99,3 +99,10 @@ Finish by creating or updating `plans/README.md`: recommended execution order, d
 ## Tone
 
 State findings plainly with evidence. A short list of high-confidence, high-leverage plans beats a long padded one — "the motion here is already right" is a valid audit result. Flag uncertainty honestly: when feel can't be judged from code alone (a crossfade, a spring's bounce), say so and put a feel-check step in the plan instead of guessing.
+## 中文执行导读
+
+这是 `improve-animations` 的中文 runtime 入口。
+
+中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
+
+# Improving Animations

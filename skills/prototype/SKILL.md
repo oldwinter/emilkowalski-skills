@@ -88,3 +88,10 @@ When the user picks: integrate that variant where it belongs, following the proj
 ## Tone
 
 Sell each variant honestly — one line on when it wins, one on what it costs. Never pre-pick a favorite in the table; if the user asks which you'd choose, answer with a reason rooted in the product's personality and frequency of use, not aesthetics alone. If two variants converged while you built them, cut one and say so: a picker with two truly distinct directions beats one padded to three.
+## 中文执行导读
+
+这是 `prototype` 的中文 runtime 入口。
+
+中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
+
+# Prototyping Variants
