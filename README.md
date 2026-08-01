@@ -4,6 +4,14 @@
 
 # Skills For Design Engineers
 
+## 中文版安装（oldwinter fork）
+
+这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游动画设计正文。
+
+```bash
+npx skills add oldwinter/emilkowalski-skills --full-depth
+```
+
 [![skills.sh](https://skills.sh/b/emilkowalski/skills)](https://skills.sh/emilkowalski/skills)
 
 For designers and engineers to help them build better user interfaces.
