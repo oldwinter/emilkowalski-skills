@@ -6,7 +6,7 @@
 
 ## 中文版安装（oldwinter fork）
 
-这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游动画设计正文；当前 9 个 skill（含新增的 `animate`）均含中文执行导读。
+这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游动画设计正文；当前 10 个 skill（含 `animate` 与 `ask-sonner`）均含中文执行导读。
 
 ```bash
 npx skills add oldwinter/emilkowalski-skills --full-depth

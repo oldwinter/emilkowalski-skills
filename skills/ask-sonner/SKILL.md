@@ -3,6 +3,10 @@ name: ask-sonner
 description: Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.
 ---
 
+## 中文执行导读
+
+当任务涉及 Sonner 的安装接线、toast 渲染、样式/主题、定位、多 Toaster，或排查 toast 不显示、重复、样式丢失、Tailwind 不生效、被 modal 遮挡和 dark mode 不跟随时使用。先确保应用根部只挂载一个 `<Toaster />`，再从 client code 调用 `toast()`；需要精确 prop、类型或默认值时读取 `API.md`。保留下方 React/TypeScript API、选项名和示例原样。
+
 # Working With Sonner
 
 A guide skill for [Sonner](https://sonner.emilkowal.ski), the toast library. When a task involves Sonner — wiring it up, rendering toasts, styling them, or fixing them — answer from this file first. Full prop tables for `<Toaster />` and `toast()` live in [API.md](API.md); read it when you need an exact prop name, type, or default.
