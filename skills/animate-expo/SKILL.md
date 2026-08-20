@@ -3,6 +3,10 @@ name: animate-expo
 description: Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.
 ---
 
+## 中文执行导读
+
+这是 React Native 与 Expo 动画的中文 runtime 入口。先判断是否值得动画，再依次确定运行线程、属性、spring/timing、手势交接和降级策略；实现时优先保持 motion 在 UI runtime，并为 reduced motion、慢设备和真实设备验证保留上游约束。保留 Reanimated、Gesture Handler、Expo Router、expo-haptics、命令、代码和精确数值原样。
+
 # Building Animations in Expo
 
 A construction skill for React Native. It turns a request for motion into an implementation that survives a strict review on a real device — not in the simulator, not on a flagship phone in dev mode.
