@@ -6,7 +6,7 @@
 
 ## 中文版安装（oldwinter fork）
 
-这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游动画设计正文；当前 11 个 skill（含 `animate`、`animate-expo` 与 `ask-sonner`）均含中文执行导读。
+这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游权威正文；当前 12 个 skill（含 `animate`、`animate-expo`、`write-swift` 与 `ask-sonner`）均含中文执行导读。
 
 ```bash
 npx skills add oldwinter/emilkowalski-skills --full-depth
@@ -56,6 +56,7 @@ This is your shortcut to great interfaces. A shortcut to stand out in a sea of s
 - **[find-animation-opportunities](./skills/find-animation-opportunities/SKILL.md)** — Search your UI for places that would genuinely benefit from motion, while also telling you what not to animate.
 - **[animation-vocabulary](./skills/animation-vocabulary/SKILL.md)** — Get better animations from an AI by telling it exactly what you want by using the right words.
 - **[apple-design](./skills/apple-design/SKILL.md)** — Apple’s principles for interface design and fluid motion, distilled from their WWDC design talks and translated for the web.
+- **[write-swift](./skills/write-swift/SKILL.md)** — Write modern Swift. Includes: value types, Swift 6 concurrency, generics, performance, and Swift Testing.
 - **[pick-ui-library](./skills/pick-ui-library/SKILL.md)** — Have your agent pick the right library for the task based on libraries I use and trust, instead of letting AI hand-roll a toast component or install an abandoned package.
 - **[prototype](./skills/prototype/SKILL.md)** — Build multiple different versions of a UI piece you describe and go through them using a switcher.
 - **[ask-sonner](./skills/ask-sonner/SKILL.md)** — Your guide to working with [Sonner](https://sonner.emilkowal.ski), my toast library. Contains setup, styling, recipes, and fixes for the most common issues.
