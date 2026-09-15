@@ -3,6 +3,13 @@ name: improve-animations
 description: Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to "improve the animations", "audit the motion", "make this app feel better", or wants a roadmap of animation fixes rather than a review of a single diff.
 ---
 
+## 中文执行导读
+
+这是 `improve-animations` 的中文 runtime 入口。
+
+中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
+
+
 # Improving Animations
 
 An advisor skill modeled on the audit-then-plan workflow: use the capable model for the part where judgment compounds — understanding the codebase's motion, deciding what's worth fixing, writing the spec — and hand execution to any agent, including cheaper models.
@@ -99,10 +106,3 @@ Finish by creating or updating `plans/README.md`: recommended execution order, d
 ## Tone
 
 State findings plainly with evidence. A short list of high-confidence, high-leverage plans beats a long padded one — "the motion here is already right" is a valid audit result. Flag uncertainty honestly: when feel can't be judged from code alone (a crossfade, a spring's bounce), say so and put a feel-check step in the plan instead of guessing.
-## 中文执行导读
-
-这是 `improve-animations` 的中文 runtime 入口。
-
-中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
-
-# Improving Animations

@@ -3,6 +3,13 @@ name: apple-design
 description: Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.
 ---
 
+## 中文执行导读
+
+这是 `apple-design` 的中文 runtime 入口。
+
+中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
+
+
 # Apple Design
 
 How Apple builds interfaces that stop feeling like a computer and start feeling like an extension of you. This knowledge comes from Apple's WWDC design talks — chiefly *Designing Fluid Interfaces* (WWDC 2018) — distilled and translated into the web platform (CSS, Pointer Events, `requestAnimationFrame`, spring libraries like Motion/Framer Motion).
@@ -280,10 +287,3 @@ Tactical rules that serve these:
 | Translucent chrome | `backdrop-filter` layer | content scrolls under |
 | Type tracking | Size-specific, never fixed | tighten large text (`-0.02em`), body near `0` |
 | Reduced motion | Cross-fade, not slide/spring | `@media (prefers-reduced-motion)` |
-## 中文执行导读
-
-这是 `apple-design` 的中文 runtime 入口。
-
-中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
-
-# Apple Design

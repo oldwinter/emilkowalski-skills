@@ -3,6 +3,13 @@ name: animation-vocabulary
 description: Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term ("the bouncy thing when a popover opens" → Pop in; "the iOS rubber-band scroll" → Rubber-banding). Use when the user asks "what's it called when…", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.
 ---
 
+## 中文执行导读
+
+这是 `animation-vocabulary` 的中文 runtime 入口。
+
+中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
+
+
 # Animation Vocabulary
 
 Turn a vague description of a motion or effect into the precise term, so the user knows what to ask for.
@@ -171,10 +178,3 @@ _A curated snapshot mirroring the project's `/vocabulary` page; keep the two in 
 - **Spatial consistency** — Animating so an element keeps its identity and position across states, so users never lose track of where things went.
 - **Hardware acceleration** — Animating transform and opacity lets the GPU keep motion smooth.
 - **Reduced motion** — Respecting the user's prefers-reduced-motion setting by toning down or removing motion.
-## 中文执行导读
-
-这是 `animation-vocabulary` 的中文 runtime 入口。
-
-中文设计工程请求命中本 skill 时，先确认它是否属于当前动画或界面问题，再按下方上游流程执行。输出说明使用简体中文；保留动画术语、库名、精确数值、命令、路径、URL、代码和 skill slug。
-
-# Animation Vocabulary
