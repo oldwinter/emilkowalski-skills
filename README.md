@@ -48,15 +48,40 @@ This is your shortcut to great interfaces. A shortcut to stand out in a sea of s
 
 ## Reference
 
-- **[emil-design-eng](./skills/emil-design-eng/SKILL.md)** — The main skill that consists of mostly animation, but also some design advice.
-- **[animate](./skills/animate/SKILL.md)** — Builds an animation from scratch while choosing the correct curve, duration, properties, and so on.
-- **[animate-expo](./skills/animate-expo/SKILL.md)** — The same bar, for React Native and Expo: gestures, sheets, haptics, screen transitions, and keeping motion off the JS thread.
-- **[review-animations](./skills/review-animations/SKILL.md)** — Review your animations in a strict way, based on my rules.
-- **[improve-animations](./skills/improve-animations/SKILL.md)** — Audit all the animations in your codebase and get prioritized, self-contained plans that any agent can execute.
-- **[find-animation-opportunities](./skills/find-animation-opportunities/SKILL.md)** — Search your UI for places that would genuinely benefit from motion, while also telling you what not to animate.
-- **[animation-vocabulary](./skills/animation-vocabulary/SKILL.md)** — Get better animations from an AI by telling it exactly what you want by using the right words.
-- **[apple-design](./skills/apple-design/SKILL.md)** — Apple’s principles for interface design and fluid motion, distilled from their WWDC design talks and translated for the web.
-- **[write-swift](./skills/write-swift/SKILL.md)** — Write modern Swift. Includes: value types, Swift 6 concurrency, generics, performance, and Swift Testing.
-- **[pick-ui-library](./skills/pick-ui-library/SKILL.md)** — Have your agent pick the right library for the task based on libraries I use and trust, instead of letting AI hand-roll a toast component or install an abandoned package.
-- **[prototype](./skills/prototype/SKILL.md)** — Build multiple different versions of a UI piece you describe and go through them using a switcher.
-- **[ask-sonner](./skills/ask-sonner/SKILL.md)** — Your guide to working with [Sonner](https://sonner.emilkowal.ski), my toast library. Contains setup, styling, recipes, and fixes for the most common issues.
+Pick by the job. These skills do not overlap: writing motion, reviewing a diff, auditing a repo, and hunting for places that should move are four different next steps.
+
+| You need to | Use | Does not |
+| --- | --- | --- |
+| Write one web animation | [animate](./skills/animate/SKILL.md) | Review a diff, audit a repo, or hunt for opportunities |
+| Write one React Native / Expo animation | [animate-expo](./skills/animate-expo/SKILL.md) | Touch web CSS / Motion |
+| Review a motion diff | [review-animations](./skills/review-animations/SKILL.md) | Write features or change code |
+| Audit every animation and write plans | [improve-animations](./skills/improve-animations/SKILL.md) | Apply the fixes |
+| Find places that should (or must not) move | [find-animation-opportunities](./skills/find-animation-opportunities/SKILL.md) | Implement or review existing motion |
+| Name a motion effect | [animation-vocabulary](./skills/animation-vocabulary/SKILL.md) | Design or build it |
+| Ask a design-engineering question | [emil-design-eng](./skills/emil-design-eng/SKILL.md) | Run a specialized motion workflow |
+| Build Apple-style fluid UI on the web | [apple-design](./skills/apple-design/SKILL.md) | Write Expo or Swift |
+| Pick a library instead of hand-rolling | [pick-ui-library](./skills/pick-ui-library/SKILL.md) | Invent a toast, dropdown, or chart |
+| Compare several live UI variants | [prototype](./skills/prototype/SKILL.md) | Review existing UI or pick a dependency |
+| Wire or debug [Sonner](https://sonner.emilkowal.ski) | [ask-sonner](./skills/ask-sonner/SKILL.md) | Hand-roll a toast |
+| Write or review Swift | [write-swift](./skills/write-swift/SKILL.md) | Touch web or Expo motion |
+
+### Motion — write
+
+- **[animate](./skills/animate/SKILL.md)** — Implements one web animation (curve, duration, properties). Exact recipes: [RECIPES.md](./skills/animate/RECIPES.md).
+- **[animate-expo](./skills/animate-expo/SKILL.md)** — Same bar for Expo: gestures, sheets, haptics, screen transitions, UI-thread motion. Recipes: [RECIPES.md](./skills/animate-expo/RECIPES.md).
+
+### Motion — review, plan, hunt
+
+- **[review-animations](./skills/review-animations/SKILL.md)** — Strict review of a motion diff. Precise values: [STANDARDS.md](./skills/review-animations/STANDARDS.md).
+- **[improve-animations](./skills/improve-animations/SKILL.md)** — Read-only audit, then self-contained plans. Playbook: [AUDIT.md](./skills/improve-animations/AUDIT.md). Plan shape: [PLAN-TEMPLATE.md](./skills/improve-animations/PLAN-TEMPLATE.md).
+- **[find-animation-opportunities](./skills/find-animation-opportunities/SKILL.md)** — Search for seams that should move, and reject the ones that must not.
+
+### Design, libraries, native
+
+- **[emil-design-eng](./skills/emil-design-eng/SKILL.md)** — General design-engineering philosophy (animation plus UI polish).
+- **[animation-vocabulary](./skills/animation-vocabulary/SKILL.md)** — Reverse-lookup: vague description → exact motion term.
+- **[apple-design](./skills/apple-design/SKILL.md)** — Apple interface and fluid-motion principles, translated for the web.
+- **[pick-ui-library](./skills/pick-ui-library/SKILL.md)** — Opinionated library pick for toasts, menus, charts, and similar tasks.
+- **[prototype](./skills/prototype/SKILL.md)** — Build several genuinely different versions behind a picker. Picker spec: [PICKER.md](./skills/prototype/PICKER.md).
+- **[ask-sonner](./skills/ask-sonner/SKILL.md)** — Sonner setup, styling, recipes, and common failures. Prop tables: [API.md](./skills/ask-sonner/API.md).
+- **[write-swift](./skills/write-swift/SKILL.md)** — Modern Swift: value types, Swift 6 concurrency, generics, performance, Swift Testing.
