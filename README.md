@@ -1,12 +1,13 @@
-<a href="https://animations.dev/">
-<img width="320" height="168" alt="opengraph-image-pwu6ef" src="https://github.com/user-attachments/assets/a405a37f-1a1a-4e8d-8fd6-269ee6d4fba6" />
+
+<a href="http://aiforui.dev/">
+<img width="360" height="202" alt="opengraph-image 2" src="https://github.com/user-attachments/assets/84fca9a6-0b2b-4927-8f48-f3ce194a5c47" />
 </a>
 
 # Skills For Designers and Engineers
 
 ## 中文版安装（oldwinter fork）
 
-这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游权威正文；当前 12 个 skill（含 `animate`、`animate-expo`、`write-swift` 与 `ask-sonner`）均含中文执行导读。
+这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游权威正文；当前 13 个 skill（含 `animate`、`animate-expo`、`mobile-native`、`write-swift` 与 `ask-sonner`）均含中文执行导读。
 
 ```bash
 npx skills add oldwinter/emilkowalski-skills --full-depth
@@ -26,7 +27,7 @@ So learn to code, design, or develop expertise in any other field. It’s extrem
 
 You can stay up to date with my skills here:
 
-[Sign Up To The Newsletter](https://animations.dev/skills)
+[Sign Up To The Newsletter](https://aiforui.dev/skills)
 
 ## Install
 
@@ -54,6 +55,7 @@ Pick by the job. These skills do not overlap: writing motion, reviewing a diff, 
 | --- | --- | --- |
 | Write one web animation | [animate](./skills/animate/SKILL.md) | Review a diff, audit a repo, or hunt for opportunities |
 | Write one React Native / Expo animation | [animate-expo](./skills/animate-expo/SKILL.md) | Touch web CSS / Motion |
+| Make a web app feel native on phones | [mobile-native](./skills/mobile-native/SKILL.md) | Build React Native or design motion |
 | Review a motion diff | [review-animations](./skills/review-animations/SKILL.md) | Write features or change code |
 | Audit every animation and write plans | [improve-animations](./skills/improve-animations/SKILL.md) | Apply the fixes |
 | Find places that should (or must not) move | [find-animation-opportunities](./skills/find-animation-opportunities/SKILL.md) | Implement or review existing motion |
@@ -83,5 +85,6 @@ Pick by the job. These skills do not overlap: writing motion, reviewing a diff, 
 - **[apple-design](./skills/apple-design/SKILL.md)** — Apple interface and fluid-motion principles, translated for the web.
 - **[pick-ui-library](./skills/pick-ui-library/SKILL.md)** — Opinionated library pick for toasts, menus, charts, and similar tasks.
 - **[prototype](./skills/prototype/SKILL.md)** — Build several genuinely different versions behind a picker. Picker spec: [PICKER.md](./skills/prototype/PICKER.md).
+- **[mobile-native](./skills/mobile-native/SKILL.md)** — Fix mobile-web viewport, touch, scroll, safe-area, and browser-chrome behavior; verify device-only behavior on real hardware.
 - **[ask-sonner](./skills/ask-sonner/SKILL.md)** — Sonner setup, styling, recipes, and common failures. Prop tables: [API.md](./skills/ask-sonner/API.md).
 - **[write-swift](./skills/write-swift/SKILL.md)** — Modern Swift: value types, Swift 6 concurrency, generics, performance, Swift Testing.

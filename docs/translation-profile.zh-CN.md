@@ -6,9 +6,9 @@
 
 - 上游项目：`emilkowalski/skills`
 - 中文 fork：`oldwinter/emilkowalski-skills`
-- 当前同步上游 commit：`d23d7f88a2e21c9e4b1418c7abe420f5c1052ba7`
+- 当前同步上游 commit：`d16ebe60d09a5ba2afcb7054ede9d0a10c9f6128`
 - 主要安装面：skills CLI、直接读取 `skills/`
-- 中文 runtime 入口：12 个 `skills/*/SKILL.md`
+- 中文 runtime 入口：13 个 `skills/*/SKILL.md`
 
 ## 中文化目标
 
@@ -26,4 +26,4 @@ npx skills add oldwinter/emilkowalski-skills --full-depth
 
 - `git diff --check`
 - `rg -n '^(<<<<<<<|=======|>>>>>>>)$' .`
-- 12 个 `skills/*/SKILL.md` 均包含中文导读并保留原 frontmatter `name`
+- 13 个 `skills/*/SKILL.md` 均包含中文导读并保留原 frontmatter `name`

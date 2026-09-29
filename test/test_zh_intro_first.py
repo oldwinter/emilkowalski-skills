@@ -13,12 +13,13 @@ H1 = re.compile(r"^# [^#\n].*$", re.M)
 class ZhIntroFirstTests(unittest.TestCase):
     def test_every_skill_leads_with_chinese_intro(self):
         skills = sorted(p for p in SKILLS.iterdir() if (p / "SKILL.md").is_file())
-        self.assertEqual(len(skills), 12)
+        self.assertEqual(len(skills), 13)
         for skill_dir in skills:
             text = (skill_dir / "SKILL.md").read_text(encoding="utf-8")
             self.assertTrue(text.startswith("---\n"), skill_dir.name)
             close = text.find("\n---\n", 4)
             self.assertGreater(close, 0, skill_dir.name)
+            self.assertIn(f"\nname: {skill_dir.name}\n", text[: close + 1])
             after = text[close + 5 :].lstrip()
             self.assertTrue(
                 after.startswith("## 中文执行导读\n"),
