@@ -32,7 +32,7 @@ You can stay up to date with my skills here:
 ## Install
 
 ```bash
-npx skills@latest add emilkowalski/skills
+npx skills@latest add oldwinter/emilkowalski-skills --full-depth
 ```
 
 ## Why use it?
@@ -80,7 +80,7 @@ Pick by the job. These skills do not overlap: writing motion, reviewing a diff, 
 
 ### Design, libraries, native
 
-- **[emil-design-eng](./skills/emil-design-eng/SKILL.md)** — General design-engineering philosophy (animation plus UI polish).
+- **[emil-design-eng](./skills/emil-design-eng/SKILL.md)** — General design-engineering philosophy (animation plus UI polish). Component patterns: [COMPONENTS.md](./skills/emil-design-eng/COMPONENTS.md). Performance reference: [PERFORMANCE.md](./skills/emil-design-eng/PERFORMANCE.md).
 - **[animation-vocabulary](./skills/animation-vocabulary/SKILL.md)** — Reverse-lookup: vague description → exact motion term.
 - **[apple-design](./skills/apple-design/SKILL.md)** — Apple interface and fluid-motion principles, translated for the web.
 - **[pick-ui-library](./skills/pick-ui-library/SKILL.md)** — Opinionated library pick for toasts, menus, charts, and similar tasks.
