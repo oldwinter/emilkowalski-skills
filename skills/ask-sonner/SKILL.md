@@ -52,13 +52,13 @@ const id = toast.loading('Uploading…');
 toast.success('Uploaded', { id });
 ```
 
-**Persist** — `{ duration: Infinity }`. **Dismiss** — `toast.dismiss(id)`, or `toast.dismiss()` for all. **Read active toasts** — `useSonner()` in React, `toast.getActiveToasts()` outside it.
+**Persist** — `{ duration: Infinity }`. **Dismiss** — `toast.dismiss(id)`, or `toast.dismiss()` for all. **Read active toasts** — `useSonner()` in React, `toast.getToasts()` outside it (`toast.getHistory()` also includes dismissed history).
 
 **Links or components in the text** — pass a function for the title or description: `toast(() => <a href="…">View</a>)`.
 
-**Multiple toasters** — give each an `id` and target with `toast('…', { toasterId: 'canvas' })`. Without `toasterId`, every toaster renders the toast.
+**Multiple toasters** — give each named Toaster an `id` and target it with `toast('…', { toasterId: 'canvas' })`. A toast without `toasterId` renders only in an unnamed Toaster; if every mounted Toaster is named, that untargeted toast renders nowhere.
 
-**Close callbacks** — `onDismiss` fires on close button or swipe; `onAutoClose` fires on timeout. They are separate; there is no single "closed" callback.
+**Close callbacks** — `onDismiss` fires on close button, swipe, or `toast.dismiss()`; `onAutoClose` fires on timeout. They are separate; there is no single "closed" callback.
 
 ## Styling — the escalation ladder
 
@@ -66,7 +66,7 @@ Climb only as far as the change requires; jumping to the top rung too early is f
 
 1. **Defaults** — plus `richColors` on the Toaster for colorful success/error, `invert` to flip against the theme.
 2. **Inline tweaks** — `toastOptions={{ style: {…} }}` on the Toaster for all toasts, or `style` per `toast()` call.
-3. **Classes on parts** — `toastOptions={{ classNames: { toast, title, description, actionButton, cancelButton, closeButton } }}`. Sonner's injected styles win the cascade, so every class needs `!important` (Tailwind: `!text-red-900`). If you're marking more than a few things important, stop — go headless.
+3. **Classes on parts** — `toastOptions={{ classNames: { toast, title, description, loader, content, icon, actionButton, cancelButton, closeButton } }}`. Type-specific keys (`success`, `error`, `info`, `warning`, `loading`, `default`) are also available. Sonner's injected styles win the cascade, so every class needs `!important` (Tailwind: `!text-red-900`). If you're marking more than a few things important, stop — go headless.
 4. **Headless** — `toast.custom()` with your own JSX, keeping Sonner's positioning, stacking, and swipe. The recommended approach for a design-system toast: wrap it in your own `toast()` abstraction. (`unstyled: true` exists as a halfway house, but headless gives more control for the same effort.)
 
 **Icons** — swap defaults per-type with the Toaster's `icons` prop, per-toast with `icon`, remove with `null`.
@@ -88,5 +88,5 @@ Climb only as far as the change requires; jumping to the top rung too early is f
 | Toast never closes | `duration: Infinity`, `dismissible: false`, or a `toast.promise` whose promise never settles — the loading toast waits forever. |
 | `toast.promise` stuck on loading | It needs a promise (or a function returning one) as its first argument, and the promise must actually resolve/reject. |
 | Swipe-to-dismiss goes the wrong way / doesn't work | Directions derive from `position`. Override with `swipeDirections` on the Toaster. |
-| Toast shows up in every toaster | Multiple toasters need targeting: give each Toaster an `id` and pass `toasterId` in the `toast()` call. |
-| Toasts too close to the screen edge on mobile | `offset` (desktop, default 32px) and `mobileOffset` (<600px, default 16px) — numbers, CSS strings, or per-side objects. |
+| Toast missing from a named toaster | Named toasters require targeting: pass that Toaster's `id` as `toasterId`. Untargeted toasts render only in an unnamed Toaster. |
+| Toasts too close to the screen edge on mobile | `offset` (desktop, default 24px) and `mobileOffset` (<600px, default 16px) — numbers, CSS strings, or per-side objects. |
