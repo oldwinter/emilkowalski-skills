@@ -7,7 +7,7 @@
 
 ## 中文版安装（oldwinter fork）
 
-这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游权威正文；当前 13 个 skill（含 `animate`、`animate-expo`、`mobile-native`、`write-swift` 与 `ask-sonner`）均含中文执行导读。
+这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游权威正文；当前 14 个 skill（含 `animate`、`animate-expo`、`mobile-native`、`break-ui`、`write-swift` 与 `ask-sonner`）均含中文执行导读。
 
 ```bash
 npx skills add oldwinter/emilkowalski-skills --full-depth
@@ -56,6 +56,7 @@ Pick by the job. These skills do not overlap: writing motion, reviewing a diff, 
 | Write one web animation | [animate](./skills/animate/SKILL.md) | Review a diff, audit a repo, or hunt for opportunities |
 | Write one React Native / Expo animation | [animate-expo](./skills/animate-expo/SKILL.md) | Touch web CSS / Motion |
 | Make a web app feel native on phones | [mobile-native](./skills/mobile-native/SKILL.md) | Build React Native or design motion |
+| Stress-test a UI with worst-case data | [break-ui](./skills/break-ui/SKILL.md) | Redesign the component or fix findings without approval |
 | Review a motion diff | [review-animations](./skills/review-animations/SKILL.md) | Write features or change code |
 | Audit every animation and write plans | [improve-animations](./skills/improve-animations/SKILL.md) | Apply the fixes |
 | Find places that should (or must not) move | [find-animation-opportunities](./skills/find-animation-opportunities/SKILL.md) | Implement or review existing motion |
@@ -86,5 +87,6 @@ Pick by the job. These skills do not overlap: writing motion, reviewing a diff, 
 - **[pick-ui-library](./skills/pick-ui-library/SKILL.md)** — Opinionated library pick for toasts, menus, charts, and similar tasks.
 - **[prototype](./skills/prototype/SKILL.md)** — Build several genuinely different versions behind a picker. Picker spec: [PICKER.md](./skills/prototype/PICKER.md).
 - **[mobile-native](./skills/mobile-native/SKILL.md)** — Fix mobile-web viewport, touch, scroll, safe-area, and browser-chrome behavior; verify device-only behavior on real hardware.
+- **[break-ui](./skills/break-ui/SKILL.md)** — Stress-test a UI with realistic worst-case data and report each failure before fixing it. Test data: [CATALOG.md](./skills/break-ui/CATALOG.md).
 - **[ask-sonner](./skills/ask-sonner/SKILL.md)** — Sonner setup, styling, recipes, and common failures. Prop tables: [API.md](./skills/ask-sonner/API.md).
 - **[write-swift](./skills/write-swift/SKILL.md)** — Modern Swift: value types, Swift 6 concurrency, generics, performance, Swift Testing.

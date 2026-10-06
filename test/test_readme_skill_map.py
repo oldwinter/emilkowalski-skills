@@ -17,6 +17,7 @@ SKILL_NAMES = (
     "animation-vocabulary",
     "apple-design",
     "ask-sonner",
+    "break-ui",
     "emil-design-eng",
     "find-animation-opportunities",
     "improve-animations",
@@ -35,6 +36,7 @@ COMPANIONS = (
     "skills/improve-animations/PLAN-TEMPLATE.md",
     "skills/prototype/PICKER.md",
     "skills/ask-sonner/API.md",
+    "skills/break-ui/CATALOG.md",
     "skills/emil-design-eng/COMPONENTS.md",
     "skills/emil-design-eng/PERFORMANCE.md",
 )
@@ -43,6 +45,7 @@ EXCLUSIVE_JOBS = (
     ("Write one web animation", "animate", "Review a diff"),
     ("Write one React Native / Expo animation", "animate-expo", "web CSS"),
     ("Make a web app feel native on phones", "mobile-native", "React Native"),
+    ("Stress-test a UI with worst-case data", "break-ui", "Redesign"),
     ("Review a motion diff", "review-animations", "Write features"),
     ("Audit every animation and write plans", "improve-animations", "Apply the fixes"),
     ("Find places that should (or must not) move", "find-animation-opportunities", "Implement"),
@@ -97,7 +100,7 @@ class ReadmeSkillMapTests(unittest.TestCase):
             self.assertIn(f"](./{rel})", section, rel)
             self.assertTrue((ROOT / rel).is_file(), rel)
         self.assertIn("npx skills add oldwinter/emilkowalski-skills --full-depth", readme)
-        self.assertIn("当前 13 个 skill", readme)
+        self.assertIn("当前 14 个 skill", readme)
         self.assertIn(
             "npx skills@latest add oldwinter/emilkowalski-skills --full-depth",
             readme,
