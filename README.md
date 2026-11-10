@@ -1,4 +1,3 @@
-
 <a href="http://aiforui.dev/">
 <img width="360" height="202" alt="opengraph-image 2" src="https://github.com/user-attachments/assets/84fca9a6-0b2b-4927-8f48-f3ce194a5c47" />
 </a>
@@ -7,7 +6,7 @@
 
 ## 中文版安装（oldwinter fork）
 
-这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游权威正文；当前 14 个 skill（含 `animate`、`animate-expo`、`mobile-native`、`break-ui`、`write-swift` 与 `ask-sonner`）均含中文执行导读。
+这是上游 `emilkowalski/skills` 的中文化 fork。安装后直接读取 `skills/*/SKILL.md` 中的中文执行导读和上游权威正文；当前 18 个 skill（含 `animate`、`animate-expo`、`choreograph`、`gestures`、`animation-performance`、`remove-animations`、`mobile-native`、`break-ui`、`write-swift` 与 `ask-sonner`）均含中文执行导读。
 
 ```bash
 npx skills add oldwinter/emilkowalski-skills --full-depth
@@ -27,7 +26,7 @@ So learn to code, design, or develop expertise in any other field. It’s extrem
 
 You can stay up to date with my skills here:
 
-[Sign Up To The Newsletter](https://aiforui.dev/skills)
+[Sign Up To The Newsletter](https://aiforui.dev/skills/updates)
 
 ## Install
 
@@ -55,11 +54,15 @@ Pick by the job. These skills do not overlap: writing motion, reviewing a diff, 
 | --- | --- | --- |
 | Write one web animation | [animate](./skills/animate/SKILL.md) | Review a diff, audit a repo, or hunt for opportunities |
 | Write one React Native / Expo animation | [animate-expo](./skills/animate-expo/SKILL.md) | Touch web CSS / Motion |
+| Coordinate several elements that move together | [choreograph](./skills/choreograph/SKILL.md) | Fix dropped frames or review a diff |
+| Build drag, swipe, and sheet gestures | [gestures](./skills/gestures/SKILL.md) | Design motion from scratch |
 | Make a web app feel native on phones | [mobile-native](./skills/mobile-native/SKILL.md) | Build React Native or design motion |
 | Stress-test a UI with worst-case data | [break-ui](./skills/break-ui/SKILL.md) | Redesign the component or fix findings without approval |
 | Review a motion diff | [review-animations](./skills/review-animations/SKILL.md) | Write features or change code |
 | Audit every animation and write plans | [improve-animations](./skills/improve-animations/SKILL.md) | Apply the fixes |
 | Find places that should (or must not) move | [find-animation-opportunities](./skills/find-animation-opportunities/SKILL.md) | Implement or review existing motion |
+| Remove motion the app doesn't need | [remove-animations](./skills/remove-animations/SKILL.md) | Write new animation or review a diff |
+| Fix animations that drop frames | [animation-performance](./skills/animation-performance/SKILL.md) | Write a new animation from scratch |
 | Name a motion effect | [animation-vocabulary](./skills/animation-vocabulary/SKILL.md) | Design or build it |
 | Ask a design-engineering question | [emil-design-eng](./skills/emil-design-eng/SKILL.md) | Run a specialized motion workflow |
 | Build Apple-style fluid UI on the web | [apple-design](./skills/apple-design/SKILL.md) | Write Expo or Swift |
@@ -72,12 +75,16 @@ Pick by the job. These skills do not overlap: writing motion, reviewing a diff, 
 
 - **[animate](./skills/animate/SKILL.md)** — Implements one web animation (curve, duration, properties). Exact recipes: [RECIPES.md](./skills/animate/RECIPES.md).
 - **[animate-expo](./skills/animate-expo/SKILL.md)** — Same bar for Expo: gestures, sheets, haptics, screen transitions, UI-thread motion. Recipes: [RECIPES.md](./skills/animate-expo/RECIPES.md).
+- **[choreograph](./skills/choreograph/SKILL.md)** — Coordinate several elements that animate together: what leads, what follows, what runs in parallel, and what should not move at all.
+- **[gestures](./skills/gestures/SKILL.md)** — Build drag, swipe, and sheet interactions that track the finger 1:1, carry the release speed, and can be caught mid-animation.
 
 ### Motion — review, plan, hunt
 
 - **[review-animations](./skills/review-animations/SKILL.md)** — Strict review of a motion diff. Precise values: [STANDARDS.md](./skills/review-animations/STANDARDS.md).
 - **[improve-animations](./skills/improve-animations/SKILL.md)** — Read-only audit, then self-contained plans. Playbook: [AUDIT.md](./skills/improve-animations/AUDIT.md). Plan shape: [PLAN-TEMPLATE.md](./skills/improve-animations/PLAN-TEMPLATE.md).
 - **[find-animation-opportunities](./skills/find-animation-opportunities/SKILL.md)** — Search for seams that should move, and reject the ones that must not.
+- **[remove-animations](./skills/remove-animations/SKILL.md)** — Remove the animations an app does not need: motion on keyboard shortcuts, fade-ins on every section, delay on every tooltip in a group.
+- **[animation-performance](./skills/animation-performance/SKILL.md)** — Fix animations that drop frames, including the subtle issues most agents miss.
 
 ### Design, libraries, native
 
